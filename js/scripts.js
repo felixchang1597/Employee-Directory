@@ -86,7 +86,7 @@ function createOverlay(index, name, email, address, img, dob, phone) {
 
     const cardAddress = document.createElement('P');
     cardAddress.classList.add('card-address');
-    cardAddress.innerHTML = `${address.street}<br>${address.city}, ${address.state} ${address.zip}`;
+    cardAddress.innerHTML = `${address.street.number} ${address.street.name}<br>${address.city}, ${address.state} ${address.zip}`;
 
     const cardBday = document.createElement('P');
     cardBday.classList.add('card-birthday');
